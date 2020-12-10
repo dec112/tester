@@ -1,0 +1,3 @@
+#define PJ_HAS_SSL_SOCK   1
+#define PJSIP_HAS_TLS_TRANSPORT  1
+
