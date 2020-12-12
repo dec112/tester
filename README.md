@@ -57,11 +57,11 @@ Message two (response to be evaluated) *
 1. Have a look at [Clone or download the repository](https://help.github.com/en/articles/cloning-a-repository)
 2. `cd src/`
 3. `make` and `cp pjchat ../bin` (or `make install`)
-4. `cd ../bin` and `./pjchat -v -c ../config/config.yml -d ../config/msg`<br/>
+4. `cd ../bin` and `./pjchat -r 'sip:555@root.dects.dec112.eu;transport=tcp' -a -n 5 -i 1 -f ../config/msg`<br/>
 
 Usage:
 ```
--r <sip-uri> [-u <service-urn>] [-f <yaml-cfg>] [-t <msg file>] [-n <number> -i <intervall>] [-a] [-s] [-x]
+pjchat -r <sip-uri> [-u <service-urn>] [-f <yaml-cfg>] [-t <msg file>] [-n <number> -i <intervall>] [-a] [-s] [-x]
 
 -r sip-uri (request line and from header)
 -u service urn (request line)
