@@ -24,6 +24,8 @@ To be able to compile the DEC112 pjchat, make sure that you've installed or down
 
 Additionally, pjchat requires a YAML configuration file (`./config/config.yml`) that includes attributes required to connect to DEC112 services. An example is given below.
 
+_config.yml_
+
 ```c  
 --- # pjchat config
 domain: "root.dects.dec112.eu"
@@ -42,8 +44,9 @@ eval: "(1) This is the (Echo Bot Service) of (DECTS (TEST))."
 debug: "3"
 
 ```
-As an option, messages can be stored in a text file (`./config/msg.txt`) which will be sent sequentially by pjchat. Each line requires at least 2 characters and lines are separated by CRLF. A `*` marks the message whose response should be validated - refer to `eval` in the configuration file. See an example below.
+As an option, messages can be stored in a text file (`./config/msg.txt`) which will be sent sequentially by pjchat. Each line requires at least 2 characters and lines are separated by CRLF. A `*` at the line end marks the message whose response should be validated - refer to `eval` in the configuration file. See an example below.
 
+_msg.txt_
 ```
 Message one
 Message two (response to be evaluated) *
@@ -64,8 +67,9 @@ Usage:
 -u service urn (request line)
 -n number of message requests
 -i intervall time in seconds between message requests
--a automatic messages (considering number/interval)
+-a generate automatic messages (considering number/interval)
 -s use TLS
+-t read messages from text file
 -x include DEC112 specific test header
 ```
 
