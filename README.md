@@ -61,7 +61,7 @@ Message two (response to be evaluated) *
 
 Usage:
 ```
--r <sip-uri> [-u <service-urn>] [-f <yaml-cfg>] [-t <msg file>] [-n <number> -i <intervall>] [-a] ... auto message [-s] ... tls [-x] ...test header
+-r <sip-uri> [-u <service-urn>] [-f <yaml-cfg>] [-t <msg file>] [-n <number> -i <intervall>] [-a] [-s] [-x]
 
 -r sip-uri (request line and from header)
 -u service urn (request line)
